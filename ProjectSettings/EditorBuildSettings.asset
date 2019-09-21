@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Cenas/PrincipalCena.unity
+    guid: 6612f63dbddcf3e40b81ac42fabb6a9c
+  - enabled: 1
+    path: Assets/Cenas/Desafio1.unity
+    guid: 0ae1ac546cc412344bfa69dde07dad81
+  - enabled: 1
+    path: Assets/Cenas/Desafio2.unity
+    guid: 9634c4c324f01cc468c427d53e41e3a3
+  m_configObjects: {}
