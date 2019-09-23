@@ -18,26 +18,26 @@ public class PrimeiroDesafio : MonoBehaviour
     public void Comparacao()
     {
 
-    campos = new string[6] { "bonito", "infeliz", "gordo", "mau", "calor", "triste" };
+                campos = new string[6] { "bonito", "infeliz", "gordo", "mau", "calor", "triste" };
 
-        for (int i = 0; i <= 5; i++)
-        {
-            if (antonimos[i].text.ToUpper() == campos[i].ToUpper())
-            {
-                contador++;
-            }
-            else
-            {
-                corretor.text = antonimos[i].text.ToString();
-            }
+                for (int i = 0; i <= 5; i++)
+                {
+                    if (antonimos[i].text.ToUpper() == campos[i].ToUpper())
+                    {
+                        contador++;
+                    }
+                    else
+                    {
+                        corretor.text = antonimos[i].text.ToString();
+                    }
 
-            SceneManager.LoadScene(0);
-        }
+                    SceneManager.LoadScene(0);
+                }
 
-        acertos.text = contador.ToString();
-
+                acertos.text = contador.ToString();
 
     }
+
 
 
 }
