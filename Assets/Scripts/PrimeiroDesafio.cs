@@ -28,7 +28,7 @@ public class PrimeiroDesafio : MonoBehaviour
                     }
                     else
                     {
-                        corretor.text = antonimos[i].text.ToString();
+                        corretor.text = antonimos[i].text;
                     }
 
                     SceneManager.LoadScene(0);

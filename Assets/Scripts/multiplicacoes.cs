@@ -12,6 +12,7 @@ public class multiplicacoes : MonoBehaviour
     public Text valor2;
     public Text opr;
     public InputField resultado;
+    public Button Enviar;
     private int numero;
     private int randomico;
     private int randomico2;
@@ -25,56 +26,70 @@ public class multiplicacoes : MonoBehaviour
 
     void Start()
     {
-        Multiplicar();
 
     }
 
     public void Multiplicar()
     {
-        operacoes = new string[3] { "+", "-", "x"};
-        do
+        try
         {
-            i++;
-            numero = randomico;
-            numero2 = randomico2;
-            op = rdop;
-            rdop = UnityEngine.Random.Range(0, 3);
-            randomico = UnityEngine.Random.Range(1, 10);
-            randomico2 = UnityEngine.Random.Range(1, 10);
-            opr.text = operacoes[rdop];
-            valor1.text = randomico.ToString();
-            valor2.text = randomico2.ToString();
+            operacoes = new string[3] { "+", "-", "x" };
+
+                op = rdop;
+                rdop = UnityEngine.Random.Range(0, 3);
+                opr.text = operacoes[op];
+
+                if (op == 0)
+                {
+                    randomic(30);
+                    result = numero + numero2;
+                }
+                if (op == 1)
+                {
+                    randomic(20);
+                    result = numero - numero2;
+                }
+                if (op == 2)
+                {
+                    randomic(10);
+                    result = numero * numero2;
+                }
+
+                // if (result == Int32.Parse(resultado.text))
+                //{ 
+                    //Salver no banco
+                    Debug.Log(result);
+                    Debug.Log(rdop);
+                    Debug.Log(op);
+                    Debug.Log(Int32.Parse(resultado.text));
 
 
-            if (op == 0)
-            {
-                result = numero + numero2;
-            }else if(op == 1)
-            {
-                result = numero - numero2;
-            }else if(op == 2){
-                result = numero * numero2;
-            };
+                //}
 
-            if (result == Convert.ToInt32(resultado.text))
-            {
-                //Salver no banco
-                Debug.Log(result);
-                Debug.Log(op);
-                Debug.Log(Convert.ToInt32(resultado.text));
+                result = 0;
+                randomico = 0;
+                randomico2 = 0;
+                rdop = 0;
+                resultado.text = "";
+                i++;
 
-            }
 
-            result = 0;
-            randomico = 0;
-            randomico2 = 0;
-            rdop = 0;
-            resultado.text = "";
-    
-        } while (i <= 8);
-
-        SceneManager.LoadScene(0);
+          //  SceneManager.LoadScene(0);
+        }catch(Exception ex)
+        {
+            throw new Exception(ex.ToString());
+        }
     }
 
+
+    private void randomic(int x)
+    {
+        numero = randomico;
+        numero2 = randomico2;
+        randomico = UnityEngine.Random.Range(1, x);
+        randomico2 = UnityEngine.Random.Range(1, x);
+        valor1.text = randomico.ToString();
+        valor2.text = randomico2.ToString();
+    }
 
 }
