@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using NegociosBD;
 
 public class PrimeiroDesafio : MonoBehaviour
 {
-    public Negocios negocios;
 
     public TMPro.TMP_InputField[] antonimos;
     private string[] campos;

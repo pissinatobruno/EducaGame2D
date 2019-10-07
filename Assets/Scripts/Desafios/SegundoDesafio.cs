@@ -2,10 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using NegociosBD;
-using ObjSegDesafio;
 
 namespace SegDesafio
 { 
@@ -60,7 +59,7 @@ namespace SegDesafio
             }
             else
             {
-                Salvar();
+                StartCoroutine(Salvar(pontos));
                 SceneManager.LoadScene(0);
             }    
         }
@@ -81,7 +80,6 @@ namespace SegDesafio
 
         public void ResultadoFinal()
         {
-
             if (result == Int32.Parse(resultado.text))
             {
                 pontos[i] = 1; 
@@ -95,26 +93,31 @@ namespace SegDesafio
             Multiplicar();      
         }
 
-        public void Salvar()
+        public IEnumerator Salvar(int[] pontos)
         {
 
-            Negocios negocios = new Negocios();
-            ObjetoDesafio2 objetoDes = new ObjetoDesafio2(); 
-            objetoDes.campo1 = pontos[0];
-            objetoDes.campo2 = pontos[1];
-            objetoDes.campo3 = pontos[2];
-            objetoDes.campo4 = pontos[3];
-            objetoDes.campo5 = pontos[4];
-            objetoDes.campo6 = pontos[5];
-            bool retorno = negocios.Inserir(objetoDes);
+            //IDictionary<object, object> dictionary = new Dictionary<object, object>();
+            //string json = MiniJSON.JSON.Serialize(dictionary);
 
-            Debug.Log(objetoDes.campo1);
-            Debug.Log(objetoDes.campo2);
-            Debug.Log(objetoDes.campo3);
-            Debug.Log(objetoDes.campo4);
-            Debug.Log(objetoDes.campo5);
-            Debug.Log(objetoDes.campo6);
-            Debug.Log(retorno);
+            WWWForm form = new WWWForm();
+                form.AddField("pontos[0]", pontos[0]);
+                form.AddField("pontos[1]", pontos[1]);
+                form.AddField("pontos[2]", pontos[2]);
+                form.AddField("pontos[3]", pontos[3]);
+                form.AddField("pontos[4]", pontos[4]);
+                form.AddField("pontos[5]", pontos[5]);
+                UnityWebRequest www = UnityWebRequest.Post("https://apieducagame20191006054314.azurewebsites.net/api/values", form);
+                yield return www.SendWebRequest();
+
+                if (www.isNetworkError || www.isHttpError)
+                {
+                    Debug.Log(www.error);
+                }
+                else
+                {
+                    Debug.Log("Form upload complete!");
+                }
+      
 
         }
 
