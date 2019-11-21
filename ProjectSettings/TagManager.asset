@@ -10,6 +10,8 @@ TagManager:
   - Morte
   - Queda
   - Desafio
+  - N
+  - check
   layers:
   - Default
   - TransparentFX

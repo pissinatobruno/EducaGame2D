@@ -3,19 +3,29 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraScript
     - CheckDesafio1
-    - CheckDesafio2
+    - Educagame2D.Desafios.PrimeiroDesafio
+    - Educagame2D.Desafios.QuartoDesafio
+    - Educagame2D.Desafios.QuintoDesafio
+    - Educagame2D.Desafios.SegundoDesafio
+    - Educagame2D.Desafios.SetimoDesafio
+    - Educagame2D.Desafios.SextoDesafio
+    - Educagame2D.Desafios.TerceiroDesafio
+    - Finalizacao
     - Inimigo
     - PlataformaMovel
     - Player
-    - PrimeiroDesafio
-    - multiplicacoes
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
+    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.TextMeshPro.dll:
+    - TMPro.TMP_Dropdown
     - TMPro.TMP_FontAsset
     - TMPro.TMP_InputField
     - TMPro.TMP_Settings
@@ -39,8 +49,12 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
@@ -65,27 +79,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9722}
     - Class: 114
-      Script: {instanceID: 9920}
+      Script: {instanceID: 9924}
     - Class: 114
-      Script: {instanceID: 9970}
+      Script: {instanceID: 9974}
     - Class: 114
-      Script: {instanceID: 9996}
+      Script: {instanceID: 10000}
     - Class: 114
-      Script: {instanceID: 10220}
+      Script: {instanceID: 10226}
     - Class: 114
-      Script: {instanceID: 10410}
+      Script: {instanceID: 10420}
     - Class: 114
-      Script: {instanceID: 10464}
+      Script: {instanceID: 10476}
     - Class: 114
-      Script: {instanceID: 10934}
+      Script: {instanceID: 10952}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11208}
     - Class: 114
-      Script: {instanceID: 11408}
+      Script: {instanceID: 11432}
     - Class: 114
-      Script: {instanceID: 11486}
+      Script: {instanceID: 11510}
     - Class: 114
-      Script: {instanceID: 11932}
+      Script: {instanceID: 11958}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -122,25 +136,363 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9722}
     - Class: 114
-      Script: {instanceID: 9920}
+      Script: {instanceID: 9924}
     - Class: 114
-      Script: {instanceID: 9970}
+      Script: {instanceID: 9974}
     - Class: 114
-      Script: {instanceID: 10464}
+      Script: {instanceID: 10476}
     - Class: 114
-      Script: {instanceID: 10540}
+      Script: {instanceID: 10552}
     - Class: 114
-      Script: {instanceID: 10934}
+      Script: {instanceID: 10952}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11208}
     - Class: 114
-      Script: {instanceID: 11408}
+      Script: {instanceID: 11432}
     - Class: 114
-      Script: {instanceID: 11486}
+      Script: {instanceID: 11510}
     - Class: 114
-      Script: {instanceID: 11932}
+      Script: {instanceID: 11958}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Cenas/Desafio3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9722}
+    - Class: 114
+      Script: {instanceID: 9832}
+    - Class: 114
+      Script: {instanceID: 9974}
+    - Class: 114
+      Script: {instanceID: 10000}
+    - Class: 114
+      Script: {instanceID: 10226}
+    - Class: 114
+      Script: {instanceID: 10476}
+    - Class: 114
+      Script: {instanceID: 10952}
+    - Class: 114
+      Script: {instanceID: 11208}
+    - Class: 114
+      Script: {instanceID: 11432}
+    - Class: 114
+      Script: {instanceID: 11510}
+    - Class: 114
+      Script: {instanceID: 11958}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Cenas/Desafio4.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9722}
+    - Class: 114
+      Script: {instanceID: 9924}
+    - Class: 114
+      Script: {instanceID: 9974}
+    - Class: 114
+      Script: {instanceID: 10000}
+    - Class: 114
+      Script: {instanceID: 10226}
+    - Class: 114
+      Script: {instanceID: 10476}
+    - Class: 114
+      Script: {instanceID: 10794}
+    - Class: 114
+      Script: {instanceID: 10952}
+    - Class: 114
+      Script: {instanceID: 11208}
+    - Class: 114
+      Script: {instanceID: 11432}
+    - Class: 114
+      Script: {instanceID: 11510}
+    - Class: 114
+      Script: {instanceID: 11958}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Cenas/Desafio5.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9722}
+    - Class: 114
+      Script: {instanceID: 9772}
+    - Class: 114
+      Script: {instanceID: 9928}
+    - Class: 114
+      Script: {instanceID: 9974}
+    - Class: 114
+      Script: {instanceID: 10236}
+    - Class: 114
+      Script: {instanceID: 10346}
+    - Class: 114
+      Script: {instanceID: 10476}
+    - Class: 114
+      Script: {instanceID: 10714}
+    - Class: 114
+      Script: {instanceID: 10952}
+    - Class: 114
+      Script: {instanceID: 11208}
+    - Class: 114
+      Script: {instanceID: 11432}
+    - Class: 114
+      Script: {instanceID: 11510}
+    - Class: 114
+      Script: {instanceID: 11958}
+    - Class: 114
+      Script: {instanceID: 11974}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Cenas/Desafio6.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9722}
+    - Class: 114
+      Script: {instanceID: 9772}
+    - Class: 114
+      Script: {instanceID: 9924}
+    - Class: 114
+      Script: {instanceID: 9928}
+    - Class: 114
+      Script: {instanceID: 9974}
+    - Class: 114
+      Script: {instanceID: 10346}
+    - Class: 114
+      Script: {instanceID: 10476}
+    - Class: 114
+      Script: {instanceID: 10714}
+    - Class: 114
+      Script: {instanceID: 10952}
+    - Class: 114
+      Script: {instanceID: 11208}
+    - Class: 114
+      Script: {instanceID: 11250}
+    - Class: 114
+      Script: {instanceID: 11432}
+    - Class: 114
+      Script: {instanceID: 11510}
+    - Class: 114
+      Script: {instanceID: 11958}
+    - Class: 114
+      Script: {instanceID: 11974}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Cenas/Desafio7.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9722}
+    - Class: 114
+      Script: {instanceID: 9974}
+    - Class: 114
+      Script: {instanceID: 10000}
+    - Class: 114
+      Script: {instanceID: 10226}
+    - Class: 114
+      Script: {instanceID: 10472}
+    - Class: 114
+      Script: {instanceID: 10476}
+    - Class: 114
+      Script: {instanceID: 10952}
+    - Class: 114
+      Script: {instanceID: 11208}
+    - Class: 114
+      Script: {instanceID: 11432}
+    - Class: 114
+      Script: {instanceID: 11510}
+    - Class: 114
+      Script: {instanceID: 11958}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Cenas/Finalizacao.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9722}
+    - Class: 114
+      Script: {instanceID: 10476}
+    - Class: 114
+      Script: {instanceID: 11208}
+    - Class: 114
+      Script: {instanceID: 11432}
+    - Class: 114
+      Script: {instanceID: 11510}
+    - Class: 114
+      Script: {instanceID: 11958}
+    - Class: 114
+      Script: {instanceID: 179646}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -205,39 +557,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9764}
     - Class: 114
-      Script: {instanceID: 9858}
-    - Class: 114
       Script: {instanceID: 9860}
     - Class: 114
-      Script: {instanceID: 9880}
+      Script: {instanceID: 9862}
     - Class: 114
-      Script: {instanceID: 9932}
+      Script: {instanceID: 9882}
     - Class: 114
-      Script: {instanceID: 9960}
+      Script: {instanceID: 9936}
     - Class: 114
-      Script: {instanceID: 10160}
+      Script: {instanceID: 9964}
     - Class: 114
-      Script: {instanceID: 10182}
+      Script: {instanceID: 10166}
     - Class: 114
-      Script: {instanceID: 10494}
+      Script: {instanceID: 10188}
     - Class: 114
-      Script: {instanceID: 10728}
+      Script: {instanceID: 10506}
     - Class: 114
-      Script: {instanceID: 10868}
+      Script: {instanceID: 10744}
     - Class: 114
-      Script: {instanceID: 11010}
+      Script: {instanceID: 10886}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11030}
     - Class: 114
-      Script: {instanceID: 11206}
+      Script: {instanceID: 11208}
     - Class: 114
-      Script: {instanceID: 11306}
+      Script: {instanceID: 11226}
     - Class: 114
-      Script: {instanceID: 11430}
+      Script: {instanceID: 11330}
     - Class: 114
-      Script: {instanceID: 11680}
+      Script: {instanceID: 11704}
     - Class: 114
-      Script: {instanceID: 11842}
+      Script: {instanceID: 11868}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -287,6 +637,12 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 9fa81d3fe445e098969ccacfb2478c24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Desafios
+    className: TerceiroDesafio
+  - hash:
+      serializedVersion: 2
       Hash: 5bd9a19c7b5f76c563418e28f48a561b
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -305,7 +661,7 @@ ScriptsOnlyBuild:
     className: ArmModel
   - hash:
       serializedVersion: 2
-      Hash: 53b5ed0e0882ca25d146a56ba10de466
+      Hash: 3c8e444ae68941b53e05d1c68713eaa3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CheckDesafio1
@@ -321,6 +677,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e8ec8302fba8255d802db7c77a13fb5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoDesafioQuart
   - hash:
       serializedVersion: 2
       Hash: 72712369a7c681ad84fc255a5ec0b333
@@ -383,6 +745,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: e8ec8302fba8255d802db7c77a13fb5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoDesafioSex
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -437,6 +805,12 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
+      Hash: 993100b5c9b44d1f26e544efb1250fc9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Desafios
+    className: QuintoDesafio
+  - hash:
+      serializedVersion: 2
       Hash: 4e9333594897a1fb8b136ad2eae996c7
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -461,6 +835,12 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: e8ec8302fba8255d802db7c77a13fb5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoDesafioQuint
+  - hash:
+      serializedVersion: 2
       Hash: d251bf88db6c95a6b1aa0b69298da9ef
     assemblyName: UnityEngine.SpatialTracking.dll
     namespaceName: UnityEngine.SpatialTracking
@@ -473,9 +853,9 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: ab5c4f73c4021193e546c58fb41443fc
+      Hash: 10fe0b50ab7534f03f3c6b87d76992a1
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Educagame2D.Desafios
     className: PrimeiroDesafio
   - hash:
       serializedVersion: 2
@@ -489,6 +869,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Analytics.Tracker.dll
     namespaceName: UnityEngine.Analytics
     className: AnalyticsTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 921ed1822e17eea9a4b06b5382d3186a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Desafios
+    className: SetimoDesafio
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -521,10 +907,10 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 8a0ed4a62f8420bf5c0e255f6a5a3650
+      Hash: a69b291beefed9575e8cec4826721320
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: multiplicacoes
+    namespaceName: Educagame2D.Desafios
+    className: SegundoDesafio
   - hash:
       serializedVersion: 2
       Hash: 265cf27ba050d55ff33a8acab4ded6c0
@@ -537,6 +923,12 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransformVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: e8ec8302fba8255d802db7c77a13fb5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoDesafioSeg
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -567,6 +959,12 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkCallbacks
+  - hash:
+      serializedVersion: 2
+      Hash: 9fa81d3fe445e098969ccacfb2478c24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Desafios
+    className: QuartoDesafio
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -609,6 +1007,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: e8ec8302fba8255d802db7c77a13fb5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoDesafioSet
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -671,6 +1075,18 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 21fdeee9f79d44cff891cb8a767f3d88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: loading
+  - hash:
+      serializedVersion: 2
+      Hash: 993100b5c9b44d1f26e544efb1250fc9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Desafios
+    className: SextoDesafio
+  - hash:
+      serializedVersion: 2
       Hash: 318c6c13a19c9fac98135ae14889de1b
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -695,10 +1111,10 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 53b5ed0e0882ca25d146a56ba10de466
+      Hash: e8ec8302fba8255d802db7c77a13fb5b
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CheckDesafio2
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoDesafioPri
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -759,6 +1175,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: e8ec8302fba8255d802db7c77a13fb5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoDesafioTerc
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -855,9 +1277,39 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Finalizacao
+  - hash:
+      serializedVersion: 2
+      Hash: ef17a44ac82ce3520fd7063ddc89e727
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoSalasAlunos
+  - hash:
+      serializedVersion: 2
+      Hash: 2ef01fb47e961a34f075bf5a365a2500
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoSalas
+  - hash:
+      serializedVersion: 2
+      Hash: 4f9fba43b7297a53b172c5d84f055003
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Educagame2D.Objetos
+    className: ObjetoAlunos
   platform: 19
   scenePathNames:
   - Assets/Cenas/PrincipalCena.unity
   - Assets/Cenas/Desafio1.unity
   - Assets/Cenas/Desafio2.unity
-  playerPath: E:/Desktop/FACULDADE/Novo TCC/Buik/EducaGameProject.exe
+  - Assets/Cenas/Desafio3.unity
+  - Assets/Cenas/Desafio4.unity
+  - Assets/Cenas/Desafio5.unity
+  - Assets/Cenas/Desafio6.unity
+  - Assets/Cenas/Desafio7.unity
+  - Assets/Cenas/Finalizacao.unity
+  playerPath: C:/Users/pissi/Desktop/teste/EducaGameProject.exe

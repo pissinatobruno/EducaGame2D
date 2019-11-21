@@ -3535,8 +3535,7 @@ MonoBehaviour:
   - {fileID: 362337099}
   - {fileID: 1866432321}
   - {fileID: 269959661}
-  acertos: {fileID: 1166782705}
-  corretor: {fileID: 677802595}
+  pontos: 000000000000000000000000000000000000000000000000
 --- !u!4 &1415850879
 Transform:
   m_ObjectHideFlags: 0

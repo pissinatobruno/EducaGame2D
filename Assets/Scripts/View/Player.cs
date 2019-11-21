@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     float horizontal;
-
+    public static Vector2 posPlayer;
     private Rigidbody2D RbPlayer2d;
     private Animator animator;
     private bool ladoDireito;
@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float velocidade = 0;
     private float valorExtraCorrida = 3;
+    public GameObject LastCheck;
 
     // Start is called before the first frame update
     private void Awake()
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        transform.position = posPlayer;
         puloExtra = puloExtraValues;
     }
 
@@ -138,6 +140,11 @@ public class Player : MonoBehaviour
         {
             transform.parent = colisao.transform;
 
+        }
+
+        if (colisao.transform.tag == "check")
+        {
+            posPlayer = transform.position;
         }
 
         if (colisao.transform.tag == "Inimigo" || colisao.transform.tag == "Morte")
